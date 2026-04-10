@@ -201,3 +201,57 @@ n=1일 때, 남은 일의 작업량이 [2,1,2]라면 야근 지수를 최소화�
 입출력 예 #2
 
 - 모든 상자를 보조 컨테이너 벨트에 모두 넣고, 역순으로 하나씩 빼서 트럭에 싣습니다.
+
+---
+
+## 숫자 변환하기
+
+### 문제 설명
+자연수 x를 y로 변환하려고 합니다. 사용할 수 있는 연산은 다음과 같습니다.
+
+  - x에 n을 더합니다
+  - x에 2를 곱합니다.
+  - x에 3을 곱합니다.
+자연수 x, y, n이 매개변수로 주어질 때, x를 y로 변환하기 위해 필요한 최소 연산 횟수를 return하도록 solution 함수를 완성해주세요. 이때 x를 y로 만들 수 없다면 -1을 return 해주세요.
+
+### 제한사항
+- 1 ≤ x ≤ y ≤ 1,000,000
+- 1 ≤ n < y
+
+### 입출력 예
+<table align="center">
+	<tr>
+		<td align="center"><b>x</b></td>
+		<td align="center"><b>y</b></td>
+		<td align="center"><b>n</b></td>
+		<td align="center"><b>result</b></td>
+	</tr>
+	<tr>
+		<td align="center">10</td>
+		<td align="center">40</td>
+		<td align="center">5</td>
+		<td align="center">2</td>
+	</tr>
+	<tr>
+		<td align="center">10</td>
+		<td align="center">40</td>
+		<td align="center">30</td>
+		<td align="center">1</td>
+	</tr>
+	<tr>
+		<td align="center">2</td>
+		<td align="center">5</td>
+		<td align="center">4</td>
+		<td align="center">-1</td>
+	</tr>
+</table>
+
+### 입출력 예 설명
+입출력 예 #1  
+x에 2를 2번 곱하면 40이 되고 이때가 최소 횟수입니다.  
+
+입출력 예 #2  
+x에 n인 30을 1번 더하면 40이 되고 이때가 최소 횟수입니다.  
+
+입출력 예 #3  
+x를 y로 변환할 수 없기 때문에 -1을 return합니다.  
